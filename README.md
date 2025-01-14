@@ -8,4 +8,4 @@ make
 ```
 
 ## Exit
-'''<Ctrl>+q'''
+```<Ctrl>+q```
