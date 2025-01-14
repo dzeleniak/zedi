@@ -22,7 +22,7 @@ enum editorKey {
   ARROW_RIGHT, 
   ARROW_UP,
   ARROW_DOWN,
-  PAGE_UP,:
+  PAGE_UP,
   PAGE_DOWN,
   HOME_KEY,
   END_KEY,
@@ -219,7 +219,7 @@ void editorDrawRows(struct abuf *ab) {
   for (y = 0; y < E.screenrows; y++) {
     if (y >= E.numrows) {
 
-      if (y == E.screenrows / 3) {
+      if (E.numrows == 0 && y == E.screenrows / 3) {
         char welcome[80];
         int welcomelen = snprintf(welcome, sizeof(welcome),
           "Zedi editor -- version %s", ZEDI_VERSION);
